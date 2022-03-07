@@ -1,0 +1,7 @@
+target: container
+
+boardgame: test.cpp container.cpp container.h
+			g++ -std=c++11 test.cpp container.cpp -o container
+
+clean:
+		rm *.o container 
