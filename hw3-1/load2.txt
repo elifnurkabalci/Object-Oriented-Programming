@@ -1,0 +1,9 @@
+11
+   abcdefg
+1  00P.P00
+2  0PP.PP0
+3  PP.PP.P
+4  PPPPPPP
+5  PPPPPPP
+6  0PPPPP0
+7  00PPP00
