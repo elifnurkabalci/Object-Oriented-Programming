@@ -1,0 +1,16 @@
+sparses : SparseVector.o SparseMatrix.o
+
+run : test.o $(sparses)
+		g++ -o test.o $(sparses)
+
+SparseMatrix.o : SparseMatrix.cpp SparseMatrix.h
+			g++ -c -std=c++11 SparseMatrix.cpp
+
+SparseVector.o : SparseVector.cpp SparseVector.h
+			g++ -c -std=c++11 SparseVector.cpp
+
+test.o : test.cpp $(sparses)
+			g++ -c -std=c++11 test.cpp
+
+clean:
+	rm *.o *.svg run 
